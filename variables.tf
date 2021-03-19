@@ -4,13 +4,13 @@ variable "region" {
 }
 variable "user" {
     type = string
-    default = "circleci-user"
+    default = "circleci-user-01"
 }
 variable "label" {
         type = string
-    default = "hashicorp.fun"
+    default = "geos.fun"
 }
 variable "app" {
         type = string
-    default = "terramino"
+    default = "terra"
 }
