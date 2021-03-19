@@ -12,5 +12,5 @@ variable "label" {
 }
 variable "app" {
         type = string
-    default = "terramino"
+    default = "terra"
 }
