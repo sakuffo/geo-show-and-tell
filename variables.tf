@@ -8,7 +8,7 @@ variable "user" {
 }
 variable "label" {
         type = string
-    default = "hashicorp.fun"
+    default = "geos.fun"
 }
 variable "app" {
         type = string
