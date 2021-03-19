@@ -12,6 +12,11 @@ jobs:
           command: |
             terraform init -input=false
             terraform plan -out tfapply -var-file variables.tfvars
+      - run:
+          name: Fail Fast
+          when: on_fail
+          command: |
+            terraform destroy
       - persist_to_workspace:
           root: .
           paths:
@@ -27,6 +32,11 @@ jobs:
           name: terraform
           command: |
             terraform apply -auto-approve tfapply
+      - run:
+          name: Fail Fast
+          when: on_fail
+          command: |
+            terraform destroy
       - persist_to_workspace:
           root: .
           paths:
