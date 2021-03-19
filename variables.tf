@@ -4,7 +4,7 @@ variable "region" {
 }
 variable "user" {
     type = string
-    default = "circleci-user"
+    default = "circleci-user-01"
 }
 variable "label" {
         type = string
